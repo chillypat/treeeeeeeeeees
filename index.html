@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Salva Árboles</title>
+</head>
+<body >
+<audio id="audio" src="https://drive.google.com/file/d/1M4uYZWYj640YfHk_JCAX_DHILxgctRw3/view?usp=sharing"></audio>
+<h1>Salva Árboles</h1>
+<p>5 razones para salvar árboles.</p>
+<img id="album" src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+<br><br>
+<button onclick="nextslide()"> Siguiente </button>
+<p id="reasontext">Los árboles proporcionan oxígeno</p>
+<script>
+    var reasons = [
+  "podemos trepar árboles",
+  "Nosotras comemos de los arables",
+  "los arboles son hermosos",
+  "los árboles también nos dan sombra",
+];
+var images = ["https://treenewal.com/wp-content/uploads/2020/11/oak-tree-care.png",
+              "http://www.todayifoundout.com/wp-content/uploads/2014/02/apple-tree.jpg",
+              "https://cdn.thecoolist.com/wp-content/uploads/2016/05/Wisteria-beautiful-tree.jpg",
+              "https://images.squarespace-cdn.com/content/v1/59cbf998197aeaead99e3780/1633024845153-S6J7TL27GFLITQOYMWUP/pexels-magda-ehlers-2861751.jpg?format=2500w"
+];
+var i = 0;
+
+function nextslide() {
+document.getElementById("reasontext").innerHTML = reasons[i];
+document.getElementById("album").src = images[i];
+i++;
+document.getElementById("audio").play();
+}
+</script>
+</body>
+</html>
